@@ -1,0 +1,58 @@
+:root {
+    --primary: rgb(55, 0, 255);
+    --primary_hover: rgb(119, 0, 255);
+    --muted : rgb(238, 238, 238);
+    --white : white;
+}
+
+
+/***********  redefinition ************/
+.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.text-primary{
+    color :  var(--primary)!important;
+}
+.bg-blanc{
+    background-color: var(--white);
+}
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--primary_hover) !important;
+    border: 1px solid var(--primary_hover);
+}
+
+
+
+
+.bloc_container_1 {
+    width: 90%;
+    margin: auto;
+}
+
+.enGras {
+    font-weight: bold;
+}
+
+.image_navbar {
+    background-size: cover;
+    height: 120px;
+    background-position: center;
+    transition: .3s;
+}
+
+.image_navbar:hover {
+    transform: scale(.95);
+}
+
+.titren3 {
+    color: var(--primary);
+      text-shadow: 0 1px 1px rgba(134, 133, 133, 0.6);
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.espace_grand_bloc{
+    margin: 5rem 0px;
+}

@@ -1,0 +1,1542 @@
+body {
+  margin: 0;
+  overflow: auto;
+  font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system,
+    "Helvetica Neue", Arial;
+
+  scroll-behavior: smooth;
+}
+
+.maNavigation * {
+  margin: 0;
+  padding: 0;
+}
+
+.maNavigation {
+  z-index: 15 !important;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 520;
+  transition: 0.3s;
+}
+
+.menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-bar ul li {
+  padding: 12px 18px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-bar ul li:hover a {
+  color: var(--primary);
+}
+
+.menu-bar ul li:hover .sub-menu-1 a {
+  color: #ffffff;
+}
+
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 div div a {
+  color: black !important;
+}
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 div div a {
+  color: black !important;
+  padding: 3px 0px;
+}
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 div div a:hover {
+  color: var(--primary) !important;
+  /* letter-spacing: 1px; */
+}
+
+.menu-bar ul li ul li:hover a {
+  color: var(--primary) !important;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  background-color: #000000be;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 12px;
+  /*  margin-left: -13px; */
+}
+
+.menu-bar ul li .sub-menu-1 ul {
+  display: inline-flex;
+  text-align: left;
+  list-style: none;
+  list-style-type: 0;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 {
+  background-color: #ffffff;
+  border-bottom: 5px solid rgb(3, 3, 3);
+  padding: 15px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 12px;
+  max-height: 60vh;
+  overflow-y: auto;
+
+  /*  margin-left: -13px; */
+}
+
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 ul {
+  display: block;
+  text-align: left;
+  list-style: none;
+  list-style-type: 0;
+}
+
+.menu-bar ul li .sub-menu-1 a {
+  display: block;
+  list-style: none;
+  list-style-type: 0;
+}
+
+/* topbar  */
+
+.topbar {
+  background-color: rgba(13, 195, 250, 0.082);
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/****** mainHeader icones****/
+.mainHeader {
+  width: 90% !important;
+}
+
+.mainHeader .icon {
+  display: inline-block;
+}
+
+.mainHeader .icon .icon_file {
+  font-size: 18px;
+  color: orange;
+}
+
+#searchInput {
+  border-radius: 50px;
+  padding: 8px 15px !important;
+  font-size: 0.85rem;
+}
+
+#searchInput:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+  /* garde la bordure grise normale */
+}
+
+.blocsearch {
+  width: 50%;
+  margin: 0px 12px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.logo .dot {
+  color: var(--primary);
+}
+
+/***** navigation   *****/
+
+/** slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease-in-out, visibility 1.2s;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  max-width: 500px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.slide-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+}
+
+.slide-content .cta {
+  margin-top: 1.5rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.3s;
+  border-radius: 100px;
+}
+
+.arrow:hover {
+  background: var(--primary);
+}
+
+.arrow.prev {
+  left: 20px;
+}
+
+.arrow.next {
+  right: 20px;
+}
+
+.dots {
+  /* position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%); */
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  /* background: rgba(0, 0, 0, 0.2); */
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.dot-btn {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 15;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot-btn.active {
+  background-color: var(--primary);
+}
+
+/* Animation du contenu (optionnel) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/************ STYLE PRODUIT CARD *********/
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 24px 18px; */
+  gap: 24px 18px;
+  margin-top: 18px;
+}
+
+.product-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 2px 2px rgba(187, 186, 186, 0.6);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  transition: 0.3s ease-in-out;
+}
+
+.product-media {
+  background: var(--muted);
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.heart {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+.product-info {
+  padding: 12px;
+}
+
+.product-brand {
+  font-size: 12px;
+  color: var(--muted-text);
+}
+
+.product-title {
+  font-size: 14px;
+  margin: 6px 0 8px;
+  color: #111;
+}
+
+.product-price {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.product-meta {
+  font-size: 12px;
+  color: var(--muted-text);
+  margin-top: 6px;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.img-failed-note {
+  color: #b33;
+  margin-top: 8px;
+  font-size: 13px;
+  display: none;
+}
+
+.nav-liens a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5em;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-title {
+    font-size: 0.5em;
+  }
+}
+
+/* Ajout de la partie des services et autres */
+/* services.namespace.css
+   Préfixé (.ns-...) — grille 4x2, boutons uniformes, fond blanc */
+:root {
+  --ns-green: #e16628;
+  --ns-muted: #6b7280;
+  --ns-card-bg: #ffffff;
+  --ns-card-border: #e6eef1;
+  --ns-radius: 12px;
+  --ns-max-width: 1400px;
+  --ns-gap: 18px;
+  --ns-shadow: 0 8px 30px rgba(17, 24, 39, 0.06);
+  --ns-font: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ns-font);
+  background: #ffffff; /* fond blanc pour toute la page */
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Section wrapper (encapsulé) */
+.ns-services-section {
+  background: #ffffff; /* fond blanc */
+  padding: 36px 18px;
+  box-sizing: border-box;
+}
+
+/* container centré */
+.ns-services-section .ns-container {
+  max-width: var(--ns-max-width);
+  margin: 0 auto;
+}
+
+/* header */
+.ns-services-section .ns-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.ns-services-section .ns-header h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: 0.2px;
+}
+.ns-services-section .ns-header p {
+  margin: 8px 0 0;
+  color: var(--ns-muted);
+  font-size: 0.95rem;
+}
+
+/* grid 4 colonnes */
+.ns-services-section .ns-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--ns-gap);
+  align-items: stretch;
+}
+
+/* carte */
+.ns-services-section .ns-card {
+  background: var(--ns-card-bg);
+  border-radius: var(--ns-radius);
+  border: 1px solid var(--ns-card-border);
+  box-shadow: var(--ns-shadow);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  min-height: 460px; /* hauteur suffisante pour media plus grand */
+  position: relative;
+}
+
+/* media (image) plus longue et descendante */
+.ns-services-section .ns-media {
+  height: 300px; /* augmenté */
+  background: linear-gradient(135deg, #f8fcfb, #f6fbff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  border-top-left-radius: var(--ns-radius);
+  border-top-right-radius: var(--ns-radius);
+}
+.ns-services-section .ns-badge {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: rgb(55, 0, 255); ;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(31, 168, 106, 0.14);
+  z-index: 2;
+}
+/* vrai <img> pour conserver ratio et meilleure qualité */
+.ns-services-section .ns-media img {
+  width: 94%;
+  height: 92%;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: translateY(
+    6%
+  ); /* pousse image vers le bas pour effet "plus de longeur du bas" */
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+  display: block;
+}
+
+/* corps de la carte */
+.ns-services-section .ns-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+.ns-services-section .ns-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+.ns-services-section .ns-title h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.ns-services-section .ns-desc {
+  margin: 6px 0 0;
+  color: var(--ns-muted);
+  font-size: 0.92rem;
+  line-height: 1.28;
+}
+
+/* features */
+.ns-services-section .ns-features {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  font-size: 0.9rem;
+  color: #334155;
+}
+.ns-services-section .ns-features li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.ns-services-section .ns-check {
+  min-width: 18px;
+  min-height: 18px;
+  display: inline-grid;
+  place-items: center;
+  background: #f0fdf8;
+  color: rgb(55, 0, 255); ;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* ligne prix + bouton */
+.ns-services-section .ns-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 12px;
+}
+.ns-services-section .ns-price {
+  font-weight: 700;
+  color: var(--ns-green);
+  font-size: 1rem;
+}
+.ns-services-section .ns-price small {
+  display: block;
+  font-weight: 500;
+  color: var(--ns-muted);
+  font-size: 0.83rem;
+}
+
+/* CTA zone — empêche extension et uniforme les boutons */
+.ns-services-section .ns-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+}
+.ns-services-section .ns-cta .ns-btn {
+  padding: 10px 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  min-width: 150px; /* même largeur minimale */
+  height: 42px; /* hauteur uniforme */
+  line-height: 1;
+  white-space: nowrap; /* pas de wrap */
+  box-sizing: border-box;
+  flex: 0 0 auto; /* n'autorise pas le bouton à grandir */
+  background: rgb(55, 0, 255); ;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 10px 26px rgba(31, 168, 106, 0.12);
+}
+.ns-services-section .ns-cta .ns-btn:active {
+  transform: translateY(1px);
+}
+
+/* étiquette de prix qui descend davantage */
+.ns-services-section .ns-price-tag {
+  position: absolute;
+  right: 14px;
+  bottom: -26px; /* descend bas */
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--ns-card-border);
+  padding: 8px 10px;
+  font-weight: 700;
+  color: var(--ns-green);
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.06);
+  font-size: 0.95rem;
+}
+
+/* Responsive : garde 4 colonnes sur large, et descend progressivement */
+@media (max-width: 1200px) {
+  .ns-services-section .ns-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 960px) {
+  .ns-services-section .ns-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ns-services-section .ns-card {
+    min-height: 480px;
+  }
+}
+@media (max-width: 640px) {
+  .ns-services-section .ns-grid {
+    grid-template-columns: 1fr;
+  }
+  .ns-services-section .ns-media {
+    height: 160px;
+  }
+  .ns-services-section .ns-price-tag {
+    bottom: -18px;
+    right: 12px;
+  }
+}
+
+/* petit ajustement pour éviter texte qui force la carte à élargir */
+.ns-services-section .ns-card * {
+  box-sizing: border-box;
+}
+
+/* La derniere partie, les trois dernieres sections */
+
+/* nyota-sections.css — container max-width = 1500px
+   Préfixe : nyota-
+*/
+
+/* reset local */
+.nyota-wrap * {
+  box-sizing: border-box;
+}
+
+/* container général — AGRANDI à 1500px */
+.nyota-wrap {
+  max-width: 1500px; /* <-- valeur demandée */
+  margin: 0 auto;
+  padding: 0 24px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    "Helvetica Neue";
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== CTA ===== */
+.nyota-cta-row {
+  display: flex;
+  justify-content: center;
+  margin: 36px 0;
+}
+.nyota-cta-btn {
+  background: #e16628;
+  color: #e16628;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px #e16628;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  display: inline-block;
+}
+
+/* ================= SERVICES (carousel) - plus large ================= */
+:root {
+  --container-max: 1500px;
+  --gutter: 24px;
+  --gap: 20px;
+  --title-color: #0f 1724;
+  --muted: #6b7280;
+  --card-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  --cta-1: #00c27a;
+  --cta-2: #00a86b;
+  --control-size: 48px;
+  --radius: 12px;
+  --accent: #0b74da;
+  --bg: #f8fafc;
+  --text: #081126;
+}
+
+.nyota-services {
+  max-width: var(--container-max);
+  margin: 48px auto;
+  padding: 18px;
+  font-family: Inter, system-ui, Arial;
+}
+
+.nyota-cta-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.nyota-cta-btn {
+  background: linear-gradient(180deg, var(--cta-1), var(--cta-2));
+  color: #012;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 12px 30px rgba(0, 162, 107, 0.12);
+}
+
+.nyota-services-header {
+  padding: 0 var(--gutter);
+  margin-bottom: 8px;
+}
+.nyota-services-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.nyota-tabs-row {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+.nyota-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.nyota-tab {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nyota-tab:hover{
+  background: #0b74da;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  padding: 15px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+
+}
+.nyota-tab.active {
+  color: var(--accent);
+  box-shadow: 0 8px 22px rgba(11, 116, 218, 0.06);
+  border-color: rgba(11, 116, 218, 0.12);
+}
+
+.nyota-carousel-wrap {
+  position: relative;
+  padding: 8px var(--gutter) 28px;
+  background-color: #fff;
+}
+.nyota-carousel {
+  display: flex;
+  gap: var(--gap);
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+  scroll-snap-type: x mandatory;
+}
+.nyota-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+.nyota-carousel::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+.nyota-card {
+  flex: 0 0 320px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 380px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  scroll-snap-align: start;
+}
+.nyota-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 44px rgba(16, 24, 40, 0.12);
+}
+.nyota-card-thumb {
+  height: 200px;
+  background: #efefef;
+  overflow: hidden;
+}
+.nyota-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.nyota-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.nyota-card-kicker {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.nyota-card-title {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.3;
+  color: var(--text);
+  font-weight: 700;
+}
+.nyota-card-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.nyota-card-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.nyota-card-author img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.nyota-card-price {
+  font-weight: 800;
+  font-size: 15px;
+  color: #111;
+}
+
+.nyota-carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 var(--gutter);
+  pointer-events: none;
+  z-index: 30;
+}
+.nyota-carousel-btn {
+  pointer-events: all;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--control-size);
+  height: var(--control-size);
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(3, 10, 18, 0.06);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  cursor: pointer;
+  font-weight: 700;
+}
+.nyota-carousel-btn.prev {
+  left: calc(var(--gutter) / 2);
+}
+.nyota-carousel-btn.next {
+  right: calc(var(--gutter) / 2);
+}
+.nyota-carousel-btn[disabled] {
+  opacity: 0.45;
+  cursor: default;
+  transform: translateY(-50%) scale(0.98);
+  box-shadow: none;
+}
+
+.nyota-carousel-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+.nyota-carousel-dot {
+  width: 9px;
+  height: 9px;
+  background: rgba(15, 23, 42, 0.08);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.nyota-carousel-dot.active {
+  background: var(--accent);
+  transform: scale(1.15);
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  .nyota-card {
+    flex: 0 0 300px;
+  }
+}
+@media (max-width: 900px) {
+  .nyota-card {
+    flex: 0 0 260px;
+    min-height: 340px;
+  }
+  .nyota-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+  .nyota-carousel-btn.prev {
+    left: 12px;
+  }
+  .nyota-carousel-btn.next {
+    right: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .nyota-card {
+    flex: 0 0 72%;
+  }
+  .nyota-carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .nyota-cta-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+/* Pour cacher les scrollbars mais garder le scroll fonctionnel */
+.nyota-carousel {
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE et Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.nyota-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* ===== NOTES UTILES =====
+ - Si tu veux un décalage + extérieur pour les flèches (hors container), ajuste left/right:
+     #nyota-prev { left: -12px; }  ou  #nyota-next { right: -12px; }
+ - Le CSS contient scroll-snap; pour un comportement parfait, colle aussi le JS fourni précédemment.
+*/
+/* ================= TESTIMONIALS (gradient) - plus large ================= */
+.nyota-testimonials {
+  border-radius: 18px;
+  padding: 44px 28px;
+  background: linear-gradient(90deg, #fff0f3 0%, #eafff3 100%);
+  box-shadow: 0 10px 44px rgba(8, 10, 20, 0.06);
+  margin-bottom: 36px;
+  position: relative;
+}
+.nyota-testimonials-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 28px 0;
+}
+.nyota-test-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nyota-test-card {
+  flex: 0 0 360px;
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 12px 34px rgba(16, 24, 40, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.nyota-test-rate {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #f5a623;
+  font-weight: 800;
+}
+.nyota-test-text {
+  margin: 0;
+  color: #233244;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.nyota-test-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+.nyota-test-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nyota-test-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= LOGOS ================= */
+.nyota-logos {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 22px 0;
+  opacity: 0.95;
+}
+.nyota-logos img {
+  height: 48px;
+  width: auto;
+  filter: grayscale(1) contrast(0.9) opacity(0.9);
+  object-fit: contain;
+}
+
+/* ===== responsive ===== */
+@media (max-width: 1200px) {
+  .nyota-wrap {
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  .nyota-card {
+    flex: 0 0 300px;
+    min-height: 360px;
+  }
+  .nyota-card-thumb {
+    height: 180px;
+  }
+  .nyota-test-card {
+    flex: 0 0 320px;
+  }
+}
+@media (max-width: 900px) {
+  .nyota-card {
+    flex: 0 0 260px;
+  }
+  .nyota-card-thumb {
+    height: 160px;
+  }
+  .nyota-test-card {
+    flex: 0 0 100%;
+    max-width: 520px;
+  }
+  .nyota-logos img {
+    height: 44px;
+  }
+}
+@media (max-width: 520px) {
+  .nyota-card {
+    flex: 0 0 90%;
+  }
+  .nyota-carousel-controls {
+    top: auto;
+    bottom: 8px;
+    transform: none;
+  }
+  .nyota-wrap {
+    padding: 0 12px;
+  }
+  .nyota-cta-row {
+    margin: 20px 0;
+  }
+}
+
+/* Partie des partenaire */
+
+#nyota-logos-section-uniq.nyota-uniq__wrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 0;
+  /* border-top: 2px solid #0a84d1;
+    border-bottom: 2px solid #0a84d1; */
+  background: #fff;
+}
+
+#nyota-logos-section-uniq .nyota-uniq__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 12px;
+}
+
+#nyota-logos-section-uniq .nyota-uniq__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* piste scoped */
+#nyota-logos-section-uniq .nyota-uniq__track {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  white-space: nowrap;
+  animation: nyota-uniq-scroll-left var(--nyota-uniq-scroll-duration, 20s)
+    linear infinite;
+  animation-play-state: paused; /* paused par défaut */
+  will-change: transform;
+  transform: translateX(var(--nyota-uniq-start-offset, 0px));
+}
+
+/* logos */
+#nyota-logos-section-uniq .nyota-uniq__track img {
+  display: block;
+  height: 70px; /* taille agrandie */
+  width: auto;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+}
+
+/* démarrer l'animation seulement quand on survole le bloc entier (scopé) */
+#nyota-logos-section-uniq:hover .nyota-uniq__track {
+  animation-play-state: running;
+}
+
+/* animation scoping name unique */
+@keyframes nyota-uniq-scroll-left {
+  0% {
+    transform: translateX(var(--nyota-uniq-start-offset));
+  }
+  100% {
+    transform: translateX(calc(var(--nyota-uniq-start-offset) - 50%));
+  }
+}
+
+/* reduced motion respecté */
+@media (prefers-reduced-motion: reduce) {
+  #nyota-logos-section-uniq .nyota-uniq__track {
+    animation: none !important;
+    transform: translateX(0) !important;
+  }
+}
+
+/* responsive (toujours scoped) */
+@media (max-width: 600px) {
+  #nyota-logos-section-uniq .nyota-uniq__track {
+    gap: 12px;
+  }
+  #nyota-logos-section-uniq .nyota-uniq__track img {
+    height: 32px;
+    padding: 6px;
+  }
+  #nyota-logos-section-uniq .nyota-uniq__inner {
+    padding: 6px;
+  }
+}
+
+/* styliser toutes nos categories (finales) */
+
+/* wrapper global (positionné relativement) */
+#categoriesContainer {
+  position: relative;
+}
+
+/* dropdown wrap : boîte flex qui contient les deux colonnes */
+#categoriesContainer .rlg-dropdown-wrap {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none; /* s'ouvre via .rlg-open sur le container */
+  background: transparent;
+  z-index: 1200;
+  width: calc(100vw - 40px);
+  max-width: 1200px;
+  margin-top: 8px;
+}
+
+/* quand ouvert, on affiche en flex */
+#categoriesContainer.rlg-open .rlg-dropdown-wrap {
+  display: flex;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* colonne gauche */
+#categoriesContainer .rlg-left-list {
+  width: 260px;
+  max-height: 520px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #e6e6e6;
+  border-right: 1px solid #ececec;
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+/* items */
+#categoriesContainer .rlg-left-item {
+  padding: 12px 18px;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f5f5f5;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+#categoriesContainer .rlg-left-item:hover,
+#categoriesContainer .rlg-left-item:focus {
+  background: #fff5eb;
+  color: #e47911;
+  outline: none;
+}
+
+/* scrollbar */
+#categoriesContainer .rlg-left-list::-webkit-scrollbar {
+  width: 8px;
+}
+#categoriesContainer .rlg-left-list::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+#categoriesContainer .rlg-left-list::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 6px;
+}
+#categoriesContainer .rlg-left-list {
+  scrollbar-width: thin;
+  scrollbar-color: #cfcfcf #f7f7f7;
+}
+
+/* colonne droite */
+#categoriesContainer .rlg-right-mega {
+  flex: 1;
+  width: 540px;
+  background: #fff;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  padding: 18px 22px;
+  box-shadow: none;
+}
+
+/* panels */
+#categoriesContainer .rlg-mega-panel {
+  display: none;
+}
+#categoriesContainer .rlg-mega-panel[aria-hidden="false"] {
+  display: block;
+}
+
+/* grille */
+#categoriesContainer .rlg-mega-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+#categoriesContainer .rlg-mega-col h4 {
+  margin: 0 0 8px;
+  color: #e47911;
+  font-size: 15px;
+}
+#categoriesContainer .rlg-mega-col ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#categoriesContainer .rlg-mega-col li {
+  margin: 6px 0;
+}
+#categoriesContainer .rlg-mega-col a {
+  color: #333;
+  text-decoration: none;
+}
+#categoriesContainer .rlg-mega-col a:hover {
+  color: #e47911;
+}
+
+/* état caché utilitaire */
+.rlg-hidden {
+  display: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  #categoriesContainer .rlg-dropdown-wrap {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+  #categoriesContainer .rlg-left-list {
+    width: 100%;
+    border-radius: 6px;
+    max-height: none;
+  }
+  #categoriesContainer .rlg-right-mega {
+    min-width: auto;
+    border-left: 1px solid transparent;
+    padding: 12px;
+  }
+  #categoriesContainer .rlg-mega-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* LA section news flash (livraison a partir de 50) */
+
+/* Animation d'apparition et de disparition rapide */
+@keyframes slide-fade {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.news-flash {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.news-flash li {
+  animation: slide-fade 3s ease-in-out infinite; /* 3s pour une animation plus rapide */
+  opacity: 0; /* Commence invisible */
+  animation-delay: 0s; /* Délai initial */
+}
+
+/* Ajout d'un délai d'apparition progressif pour chaque élément li */
+.news-flash li:nth-child(1) {
+  animation-delay: 0s; /* Le premier élément n'a pas de délai */
+}
+
+.news-flash li:nth-child(2) {
+  animation-delay: 2s; /* Le second élément attend 2s avant de commencer */
+}
+
+.news-flash li:nth-child(3) {
+  animation-delay: 4s; /* Le troisième élément attend 4s, et ainsi de suite */
+}
+
+/* proprieté qui gere la barre de recharche et tout */
+
+/* 1) Layout du header : on active le flex */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* 2) Le container du champ prend tout l’espace libre */
+.header-right .search-style {
+  flex: 1 1 auto;
+  margin-right: 1rem; /* ajuste l’espacement avec les autres icônes */
+}
+
+/* 3) Le form occupe 100% du container */
+.header-right .search-style form {
+  width: 95%;
+  display: block;
+}
+
+/* 4) Style de l’input : forme pill, icône, overrides */
+.header-right .search-style form input[type="text"] {
+  /* taille et agencement */
+  width: 100%;
+  height: 48px; /* hauteur fixe pour un pill parfait */
+  padding: 0.75rem 3rem 0.75rem 1rem; /* espace à droite pour l’icône */
+
+  /* typo */
+  font-size: 1rem;
+  line-height: 1.2;
+
+  /* bordure & fond */
+  border: 1px solid #dfe1e5;
+  border-radius: 999px; /* arrondi maximal */
+  background-color: #fff;
+
+  /* icône loupe (adapte le chemin si besoin) */
+
+  /* suppression des styles natifs */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+
+  /* transition pour le focus */
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* 5) Placeholder plus discret */
+.header-right .search-style form input[type="text"]::placeholder {
+  color: #757575;
+  opacity: 1; /* certains resets baissent l’opacité par défaut */
+}
+
+/* 6) Effet focus “Google-like” */
+.header-right .search-style form input[type="text"]:focus {
+  border-color: #4285f4;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+/* 7) Neutraliser l’autofill Chrome (fond vert/jaune) */
+.header-right .search-style form input[type="text"]:-webkit-autofill,
+.header-right .search-style form input[type="text"]:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  box-shadow: 0 0 0 1000px #fff inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+/* Position relative pour contenir l’icône */
+.search-style form {
+  position: relative;
+  width: 100%;
+}
+
+/* Bouton loupe */
+.search-style form .search-btn {
+  position: absolute;
+  right: 40px; /* espace à droite */
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #757575;
+  font-size: 18px; /* taille de l’icône */
+  line-height: 1;
+  padding: 0;
+}
