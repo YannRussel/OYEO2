@@ -25,7 +25,8 @@
     <div class="topbar">
         <div class="bloc_container_1 d-flex justify-content-between align-items-center py-2">
             <div> Télécharger l'application &nbsp;|&nbsp; Vendez sur Oyéo &nbsp;|&nbsp; Guide des tailles </div>
-            <div> Livraison gratuite à partir de 50 euros &nbsp; | &nbsp; Service client : 06 521 57 58 </div>
+            <div class="livraison-bloc"> Livraison gratuite à partir de 50 euros   </div>
+            <div>Service client : 06 521 57 58 </div>
         </div>
     </div>
 
@@ -813,7 +814,7 @@
 
             <!-- === SLIDE 1 === -->
             <div class="slide active"
-                style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/img/slider_home/slider-6.png');">
+                style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./assets/imgs/banner/hero4.png'); background-size: cover; background-position: center;">
                 <div class="slide-content">
                     <h1>Fresh<br>Vegetables<br>Big discount</h1>
                     <p>Save up to 50% off on your first order</p>
@@ -826,7 +827,7 @@
 
             <!-- === SLIDE 2 === -->
             <div class="slide"
-                style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/img/slider_home/slider-5.png');">
+                style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./assets/imgs/banner-3.png');">
                 <div class="slide-content">
                     <h1>Nouvel Arrivage<br>Mode & Style</h1>
                     <p>Les meilleures tendances du moment</p>
@@ -839,7 +840,7 @@
 
             <!-- === SLIDE 3 === -->
             <div class="slide"
-                style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('assets/img/slider_home/slider-2.png');">
+                style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/imgs/banner/b16.jpg');">
                 <div class="slide-content">
                     <h1>Produits Maison<br>Offres spéciales</h1>
                     <p>Équipez votre intérieur à petit prix</p>
@@ -866,7 +867,7 @@
 
 
         <!-- Info Strip -->
-        <div class="info-strip bg-light py-2 border-bottom " role="status" aria-live="polite">
+        <div class="info-strip bg-light py-2 border-bottom " role="status" aria-live="polite" style="height: 60px; display: flex; align-items: center;">
             <div class="bloc_container_1">
                 <div class="row text-center text-md-start">
                     <div class="col-6 col-md auto mb-2 mb-md-0">
@@ -888,164 +889,532 @@
             </div>
         </div>
 
+        <!-- SECTION OFFRES DU JOURS -->
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title">Offres du jours</h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-
-        <!-- *****************    PRODUIT *********************** -->
-        <section class="catalog-section" aria-label="Catalogue de produits">
-            <h2 class="catalog-title">Offres du jours</h2>
-
-            <div class="product-grid">
-                <!-- Card 1 -->
-                <article class="product-card" aria-label="Produit 1">
-                    <div class="product-image"
-                        style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=60')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID - Baskets montantes</div>
-                        <div class="price-row">
-                            <div class="product-price">97,95 €</div>
-                            <div class="product-old-price">139,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 2 -->
-                <article class="product-card" aria-label="Produit 2">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f5.jpg')">
-                        <div class="product-badge badge-hot">Hot</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID SE</div>
-                        <div class="price-row">
-                            <div class="product-price">à partir de 119,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence 149,95 €</div>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="product-card" aria-label="Produit 3">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f3.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 - Baskets basses</div>
-                        <div class="price-row">
-                            <div class="product-price">90,95 €</div>
-                            <div class="product-old-price">129,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="product-card" aria-label="Produit 4">
-                    <div class="product-image"
-                        style="background-image:url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=60')">
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Nike</div>
-                        <div class="product-name">NIKE SB - Chaussures de skate</div>
-                        <div class="price-row">
-                            <div class="product-price">79,95 €</div>
-                        </div>
-                        <div class="product-meta">Livraison incluse</div>
-                    </div>
-                </article>
-
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+            <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+              stroke="#e86429" 
+              fill="transparent" 
+              stroke-width="2"/>
+            </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
             </div>
-        </section>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
+  </div>
+</section>
+
 
 
 
         <!-- *****************    PRODUIT en tendance *********************** -->
-        <section class="catalog-section" aria-label="Catalogue de produits">
-            <h2 class="catalog-title">Les tendances du moment</h2>
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title">Tendance du moment</h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-            <div class="product-grid">
-                <!-- Card 1 -->
-                <article class="product-card" aria-label="Produit 1">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-large-item7.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID - Baskets montantes</div>
-                        <div class="price-row">
-                            <div class="product-price">97,95 €</div>
-                            <div class="product-old-price">139,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-                <!-- Card 2 -->
-                <article class="product-card" aria-label="Produit 2">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f2.jpg')">
-                        <div class="product-badge badge-hot">Hot</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID SE</div>
-                        <div class="price-row">
-                            <div class="product-price">à partir de 119,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence 149,95 €</div>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="product-card" aria-label="Produit 3">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f6.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 - Baskets basses</div>
-                        <div class="price-row">
-                            <div class="product-price">90,95 €</div>
-                            <div class="product-old-price">129,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="product-card" aria-label="Produit 4">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-item9.jpg')">
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Nike</div>
-                        <div class="product-name">NIKE SB - Chaussures de skate</div>
-                        <div class="price-row">
-                            <div class="product-price">79,95 €</div>
-                        </div>
-                        <div class="product-meta">Livraison incluse</div>
-                    </div>
-                </article>
-
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+            <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+              stroke="#e86429" 
+              fill="transparent" 
+              stroke-width="2"/>
+            </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
             </div>
-        </section>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
+  </div>
+</section>
+<br>
         <!-- SECTION SUR LES INCOURTOUNABLES -->
 
         <section class="categorie-defile">
             <h1 class="titre-categorie-defile">Les incontournables dans notre univers</h1>
+            <br>
             <div class="container-categorie-defile">
                 <div class="container-img-texte">
                     <div class="image-categorie">
@@ -1121,7 +1490,7 @@
                                                         <p class="libele-categorie">Telephonie</p>
                                                     </div>
         </section>
-
+<br>
 <section class="sponsored">
   <div class="sponsored-inner">
     <!-- Colonne texte -->
@@ -1141,146 +1510,265 @@
     </div>
   </div>
 </section>
-        <section class="catalog-section" aria-label="Catalogue de produits">
 
-            <div class="product-grid">
-                <!-- Card 1 -->
-                <article class="product-card" aria-label="Produit 1">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-large-item7.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID - Baskets montantes</div>
-                        <div class="price-row">
-                            <div class="product-price">97,95 €</div>
-                            <div class="product-old-price">139,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title"></h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-                <!-- Card 2 -->
-                <article class="product-card" aria-label="Produit 2">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f2.jpg')">
-                        <div class="product-badge badge-hot">Hot</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID SE</div>
-                        <div class="price-row">
-                            <div class="product-price">à partir de 119,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence 149,95 €</div>
-                    </div>
-                </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-                <!-- Card 3 -->
-                <article class="product-card" aria-label="Produit 3">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f6.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 - Baskets basses</div>
-                        <div class="price-row">
-                            <div class="product-price">90,95 €</div>
-                            <div class="product-old-price">129,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="product-card" aria-label="Produit 4">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-item9.jpg')">
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Nike</div>
-                        <div class="product-name">NIKE SB - Chaussures de skate</div>
-                        <div class="price-row">
-                            <div class="product-price">79,95 €</div>
-                        </div>
-                        <div class="product-meta">Livraison incluse</div>
-                    </div>
-                </article>
-
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+            <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+              stroke="#e86429" 
+              fill="transparent" 
+              stroke-width="2"/>
+            </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
             </div>
-        </section>
-                <section class="catalog-section" aria-label="Catalogue de produits">
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
 
-            <div class="product-grid">
-                <!-- Card 1 -->
-                <article class="product-card" aria-label="Produit 1">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-large-item7.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID - Baskets montantes</div>
-                        <div class="price-row">
-                            <div class="product-price">97,95 €</div>
-                            <div class="product-old-price">139,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 2 -->
-                <article class="product-card" aria-label="Produit 2">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f2.jpg')">
-                        <div class="product-badge badge-hot">Hot</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID SE</div>
-                        <div class="price-row">
-                            <div class="product-price">à partir de 119,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence 149,95 €</div>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="product-card" aria-label="Produit 3">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f6.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 - Baskets basses</div>
-                        <div class="price-row">
-                            <div class="product-price">90,95 €</div>
-                            <div class="product-old-price">129,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="product-card" aria-label="Produit 4">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-item9.jpg')">
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Nike</div>
-                        <div class="product-name">NIKE SB - Chaussures de skate</div>
-                        <div class="price-row">
-                            <div class="product-price">79,95 €</div>
-                        </div>
-                        <div class="product-meta">Livraison incluse</div>
-                    </div>
-                </article>
-
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
             </div>
-        </section>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
+  </div>
+</section>
+
 
 <section class="decouverte">
         <div class="contenu-section" style="background: url('./assets/imgs/banner-1.png') center; background-size: cover;">
@@ -1414,215 +1902,779 @@
   </div>
 </section>
 
-<section class="catalog-section" aria-label="Catalogue Maison & Déco">
-  <h2 class="catalog-title">Maison & Déco</h2>
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title">Mode & Bien-etre</h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-  <div class="product-grid">
-    <!-- Card 1 -->
-    <article class="product-card" aria-label="Produit 1">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60')">
-        <div class="product-badge badge-promo">Promo</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Nordic Home</div>
-        <div class="product-name">Canapé en lin beige 3 places</div>
-        <div class="price-row">
-          <div class="product-price">499,00 €</div>
-          <div class="product-old-price">699,00 €</div>
-        </div>
-        <div class="product-meta">Prix de lancement -28%</div>
-      </div>
-    </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-    <!-- Card 2 -->
-    <article class="product-card" aria-label="Produit 2">
-      <div class="product-image" style="background-image:url('./assets/imgs/table-basse.jpg')">
-        <div class="product-badge badge-hot">Nouveau</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Scandi Design</div>
-        <div class="product-name">Table basse en bois clair</div>
-        <div class="price-row">
-          <div class="product-price">149,90 €</div>
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
         </div>
-        <div class="product-meta">Fabrication artisanale</div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <!-- Card 3 -->
-    <article class="product-card" aria-label="Produit 3">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=60')">
-        <div class="product-badge badge-promo">Promo</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Boho Chic</div>
-        <div class="product-name">Suspension en rotin tressé</div>
-        <div class="price-row">
-          <div class="product-price">69,95 €</div>
-          <div class="product-old-price">89,95 €</div>
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
         </div>
-        <div class="product-meta">Éco-responsable</div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <!-- Card 4 -->
-    <article class="product-card" aria-label="Produit 4">
-      <div class="product-image" style="background-image:url('./assets/imgs/tapis.jpg')">
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Zen Room</div>
-        <div class="product-name">Tapis berbère en laine naturelle</div>
-        <div class="price-row">
-          <div class="product-price">199,00 €</div>
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
         </div>
-        <div class="product-meta">Livraison offerte</div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
       </div>
-    </article>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
   </div>
 </section>
-<section class="catalog-section" aria-label="Catalogue Mode & Bien-Être">
-  <h2 class="catalog-title">Mode & Bien-Être</h2>
 
-  <div class="product-grid">
-    <!-- Card 1 -->
-    <article class="product-card" aria-label="Produit 1">
-      <div class="product-image" style="background-image:url('./assets/imgs/mode3.jpg'); background-size:cover; background-position:center;">
-        <div class="product-badge badge-promo">Promo</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">PureSkin</div>
-        <div class="product-name">Crème hydratante visage bio</div>
-        <div class="price-row">
-          <div class="product-price">24,90 €</div>
-          <div class="product-old-price">34,90 €</div>
-        </div>
-        <div class="product-meta">Ingrédients 100% naturels</div>
-      </div>
-    </article>
 
-    <!-- Card 2 -->
-    <article class="product-card" aria-label="Produit 2">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=800&q=80'); background-size:cover; background-position:center;">
-        <div class="product-badge badge-hot">Nouveau</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">ZenWear</div>
-        <div class="product-name">Tenue de yoga en coton bio</div>
-        <div class="price-row">
-          <div class="product-price">59,00 €</div>
-        </div>
-        <div class="product-meta">Confort & liberté de mouvement</div>
-      </div>
-    </article>
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title">Maison & deco-pratique</h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-    <!-- Card 3 -->
-    <article class="product-card" aria-label="Produit 3">
-      <div class="product-image" style="background-image:url('./assets/imgs/mode2.jpg'); background-size:cover; background-position:center;">
-        <div class="product-badge badge-promo">Promo</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">AromaLife</div>
-        <div class="product-name">Diffuseur d’huiles essentielles design</div>
-        <div class="price-row">
-          <div class="product-price">39,95 €</div>
-          <div class="product-old-price">49,95 €</div>
-        </div>
-        <div class="product-meta">Bien-être à domicile</div>
-      </div>
-    </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-    <!-- Card 4 -->
-    <article class="product-card" aria-label="Produit 4">
-      <div class="product-image" style="background-image:url('./assets/imgs/mode1.jpg'); background-size:cover; background-position:center;">
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">MindEase</div>
-        <div class="product-name">Bougie parfumée lavande & vanille</div>
-        <div class="price-row">
-          <div class="product-price">19,90 €</div>
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
         </div>
-        <div class="product-meta">Relaxation garantie</div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
       </div>
-    </article>
+
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
   </div>
 </section>
 
-<section class="catalog-section" aria-label="Catalogue Cuisine & Alimentation">
-  <h2 class="catalog-title">Cuisine & Alimentation</h2>
 
-  <div class="product-grid">
-    <!-- Card 1 -->
-    <article class="product-card" aria-label="Produit 1">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?auto=format&fit=crop&w=800&q=80')">
-        <div class="product-badge badge-promo">Promo</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Gourmet Line</div>
-        <div class="product-name">Batterie de cuisine en inox 10 pièces</div>
-        <div class="price-row">
-          <div class="product-price">149,90 €</div>
-          <div class="product-old-price">199,90 €</div>
-        </div>
-        <div class="product-meta">Garantie 5 ans - Qualité pro</div>
-      </div>
-    </article>
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title">Cuisine & Alimentation</h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-    <!-- Card 2 -->
-    <article class="product-card" aria-label="Produit 2">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80')">
-        <div class="product-badge badge-hot">Nouveau</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">BioNature</div>
-        <div class="product-name">Panier bio de fruits frais</div>
-        <div class="price-row">
-          <div class="product-price">29,90 €</div>
-        </div>
-        <div class="product-meta">Récolte locale et de saison</div>
-      </div>
-    </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-    <!-- Card 3 -->
-    <article class="product-card" aria-label="Produit 3">
-      <div class="product-image" style="background-image:url('./assets/imgs/mixeur.jpg')">
-        <div class="product-badge badge-promo">Promo</div>
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Chef's Choice</div>
-        <div class="product-name">Mixeur multifonction 1200W</div>
-        <div class="price-row">
-          <div class="product-price">89,00 €</div>
-          <div class="product-old-price">119,00 €</div>
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
         </div>
-        <div class="product-meta">Idéal pour smoothies & soupes</div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
       </div>
-    </article>
 
-    <!-- Card 4 -->
-    <article class="product-card" aria-label="Produit 4">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80')">
-        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-      </div>
-      <div class="product-body">
-        <div class="product-brand">Maison du Goût</div>
-        <div class="product-name">Set de planches à découper en bambou</div>
-        <div class="price-row">
-          <div class="product-price">39,95 €</div>
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
         </div>
-        <div class="product-meta">Écologique & durable</div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
       </div>
-    </article>
+
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
   </div>
 </section>
 
@@ -1649,76 +2701,263 @@
     <a href="#" class="promo-btn">Découvrir →</a>
   </div>
 </section>
-        <section class="catalog-section" aria-label="Catalogue de produits">
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title"></h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-            <div class="product-grid">
-                <!-- Card 1 -->
-                <article class="product-card" aria-label="Produit 1">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-large-item7.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID - Baskets montantes</div>
-                        <div class="price-row">
-                            <div class="product-price">97,95 €</div>
-                            <div class="product-old-price">139,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-                <!-- Card 2 -->
-                <article class="product-card" aria-label="Produit 2">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f2.jpg')">
-                        <div class="product-badge badge-hot">Hot</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID SE</div>
-                        <div class="price-row">
-                            <div class="product-price">à partir de 119,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence 149,95 €</div>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="product-card" aria-label="Produit 3">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f6.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 - Baskets basses</div>
-                        <div class="price-row">
-                            <div class="product-price">90,95 €</div>
-                            <div class="product-old-price">129,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="product-card" aria-label="Produit 4">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/card-item9.jpg')">
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Nike</div>
-                        <div class="product-name">NIKE SB - Chaussures de skate</div>
-                        <div class="price-row">
-                            <div class="product-price">79,95 €</div>
-                        </div>
-                        <div class="product-meta">Livraison incluse</div>
-                    </div>
-                </article>
-
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
             </div>
-        </section>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
+  </div>
+</section>
 
 <section id="occasion-banner" class="occasion-section">
     <h2>Découvrez les meilleures affaires d'occasion près de chez vous</h2>
@@ -1728,78 +2967,263 @@
     </div>
 </section>
 
-        <section class="catalog-section" aria-label="Catalogue de produits">
+<section class="product-section">
+  <div class="section-header">
+    <h2 class="section-title"></h2>
+    <a href="./two_page/css.html" class="see-more" title="Voir plus de produits" aria-label="Voir plus de produits">Voir plus →</a>
+  </div>
 
-            <div class="product-grid">
-                <!-- Card 1 -->
-                <article class="product-card" aria-label="Produit 1">
-                    <div class="product-image"
-                        style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=60')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID - Baskets montantes</div>
-                        <div class="price-row">
-                            <div class="product-price">97,95 €</div>
-                            <div class="product-old-price">139,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
+  <div class="product-carousel-wrapper">
+    <!-- Flèche gauche -->
+    <button class="scroll-btn left" >←</button>
 
-                <!-- Card 2 -->
-                <article class="product-card" aria-label="Produit 2">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f5.jpg')">
-                        <div class="product-badge badge-hot">Hot</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 MID SE</div>
-                        <div class="price-row">
-                            <div class="product-price">à partir de 119,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence 149,95 €</div>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="product-card" aria-label="Produit 3">
-                    <div class="product-image" style="background-image:url('./assets/imgs/habit/f3.jpg')">
-                        <div class="product-badge badge-promo">Promo</div>
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Jordan</div>
-                        <div class="product-name">AIR JORDAN 1 - Baskets basses</div>
-                        <div class="price-row">
-                            <div class="product-price">90,95 €</div>
-                            <div class="product-old-price">129,95 €</div>
-                        </div>
-                        <div class="product-meta">Prix de référence -30%</div>
-                    </div>
-                </article>
-
-                <!-- Card 4 -->
-                <article class="product-card" aria-label="Produit 4">
-                    <div class="product-image"
-                        style="background-image:url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=60')">
-                        <button class="product-fav" aria-pressed="false" title="Ajouter aux favoris">♡</button>
-                    </div>
-                    <div class="product-body">
-                        <div class="product-brand">Nike</div>
-                        <div class="product-name">NIKE SB - Chaussures de skate</div>
-                        <div class="price-row">
-                            <div class="product-price">79,95 €</div>
-                        </div>
-                        <div class="product-meta">Livraison incluse</div>
-                    </div>
-                </article>
-
+    <!-- Conteneur scrollable des cartes -->
+    <div class="product-grid scroll-container" >
+      <!-- Carte produit 1 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Adidas</span>
+          <h3 class="product-title">Floral Summer Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$78</span>
+              <span class="original-price">$100</span>
             </div>
-        </section>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 2 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Nike</span>
+          <h3 class="product-title">Tropical Print Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$65</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 3 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Puma</span>
+          <h3 class="product-title">Abstract Pattern Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$72</span>
+              <span class="original-price">$90</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 4 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Reebok</span>
+          <h3 class="product-title">Stripe Beach Shirt</h3>
+          <div class="rating">★★★☆☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$59</span>
+              <span class="original-price">$75</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 5 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Levi’s</span>
+          <h3 class="product-title">Vintage Floral Shirt</h3>
+          <div class="rating">★★★★☆ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$110</span>
+              <span class="original-price">$85</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 6 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Navy Blossom Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 7 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Striped Floral Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte produit 8 -->
+      <div class="product-card">
+        <span class="badge">Vegetable</span>
+          <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+    <path d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+      stroke="#e86429" 
+      fill="transparent" 
+      stroke-width="2"/>
+  </svg>
+        <div class="img-wrap">
+          <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+        </div>
+        <div class="card-body">
+          <span class="brand">Uniqlo</span>
+          <h3 class="product-title">Botanical Print Shirt</h3>
+          <div class="rating">★★★★★ (372)</div>
+          <div class="by-text">
+            <span class="by">by</span>
+            <span class="oye">Oyeo</span>
+          </div>
+          <div class="product-footer">
+            <div class="price-group">
+              <span class="price">$92</span>
+              <span class="original-price">$120</span>
+            </div>
+            <span class="promo-label">Promo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button class="scroll-btn right" >→</button>
+  </div>
+</section>
             <!-- ====== SECTION UNIVERS ====== -->
             <!-- services.html
   Inclure dans <head> : <link rel="stylesheet" href="services.namespace.css">
