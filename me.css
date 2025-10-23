@@ -1759,5 +1759,15 @@ copyright, .copyright { color:rgba(255,255,255,0.35); font-size:13px; }
   .qr{ width:92px; height:92px; }
 }
 
-/* Proprieté sur les hr */
+/* LIENS DU HAUT */
+.lienshaut a{
+  color: #040718;
+  text-decoration: none;
+  padding-left: 10px;
+  transition: 0.5s;
+}
 
+.lienshaut a:hover{
+  color: #088178;
+  text-decoration: underline;
+}
