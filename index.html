@@ -22,13 +22,35 @@
 
 <body>
   <!-- Top thin promo bar -->
-  <div class="topbar">
-    <div class="bloc_container_1 d-flex justify-content-between align-items-center py-2">
-      <div class="lienshaut"> <a href="">Télécharger l'application</a> <a href="">Vendez sur Oyéo</a>  <a href="">Guide des tailles </a></div>
-      <div class="livraison-bloc"> Livraison gratuite à partir de 50 euros </div>
-      <div>Service client : 06 521 57 58 </div>
+<div class="topbar">
+  <div class="bloc_container_1 d-flex justify-content-between align-items-center py-2">
+    <!-- Liens gauche -->
+    <div class="lienshaut">
+      <a href="#">Télécharger l'application</a>
+      <a href="#">Vendez sur Oyéo</a>
+      <a href="#">Guide des tailles</a>
+    </div>
+
+    <!-- Bloc central : livraison -->
+    <div id="livraison-bloc" class="livraison-bloc">
+      Livraison gratuite à partir de 50 €</span>
+    </div>
+
+    <!-- Bloc droit : service client, langue, devise -->
+    <div class="d-flex align-items-center gap-3">
+      <div class="service-client">Service client : 06 521 57 58</div>
+
+      <!-- Devise -->
+      <div class="devise-choix d-flex align-items-center">
+        <select id="select-devise" class="form-select form-select-sm">
+          <option value="EUR">EUR (€)</option>
+          <option value="USD">USD ($)</option>
+          <option value="XAF">XAF (FCFA)</option>
+        </select>
+      </div>
     </div>
   </div>
+</div>
 
 
   <!-- ☰ Menu Header with logo, search and actions -->
@@ -3749,6 +3771,9 @@
     container.scrollBy({ left: -300, behavior: 'smooth' });
   });
 </script>
+
+<!-- SELECTOR DES DEVISES -->
+
 
 
 </body>
