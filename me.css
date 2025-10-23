@@ -201,24 +201,35 @@
 .categorie-defile {
   width: 89%;
   margin: auto;
-}
-
-.container-categorie-defile {
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 40px;
+  position: relative;
 }
 
 .titre-categorie-defile {
   font-size: 1.5em;
   font-weight: bold;
+  text-align: center;
+  color: #2b3940;
 }
 
-.img-categorie {
-  width: 100px;
+.defile-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
-.container-img-texte{
+.container-categorie-defile {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.container-categorie-defile::-webkit-scrollbar {
+  display: none; /* Cache la barre de défilement */
+}
+
+.container-img-texte {
+  flex: 0 0 auto;
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -237,21 +248,43 @@
   box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
 }
 
-
-
-.py-5 {
-  width: 90%;
-  margin: auto;
+.img-categorie {
+  width: 100px;
 }
 
-.container-occasion {
-  display: flex;
-  align-items: center;
+/* --- Flèches de navigation --- */
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+
+ 
+  display: none; /* cachées par défaut */
+  transition: 0.5s;
+  z-index: 2;
 }
 
-.img-object-occasion {
-  margin-left: 500px;
+.arrows:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+.arrows.left {
+  left: 10px;
+}
+
+.arrows.right {
+  right: 10px;
+}
+
+/* Les flèches apparaissent au survol de la section */
+.defile-wrapper:hover .arrows {
+  display: block;
 }
 
 /* PARTIE SUPERMARCHE */
