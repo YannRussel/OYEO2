@@ -368,7 +368,12 @@
   text-decoration: none;
   color: var(--title-color);
   padding: 6px 0;
+  background-color: #0b74da;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
 }
+
 
 /* Colonne image */
 .sponsored-right {
@@ -773,6 +778,7 @@
   /* Curseur main */
   transition: all 0.3s ease;
   /* Effet de transition */
+  border-radius: 10px;
 }
 
 #occasion-banner .occasion-btn-group .occasion-btn:hover {

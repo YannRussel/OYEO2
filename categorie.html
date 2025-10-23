@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyeo - home</title>
+    <!-- CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+
+
+
+
+
+    <!-- own css -->
+
+    <link rel="stylesheet" href="./assets1/own/custom_color.css">
+    <link rel="stylesheet" href="./assets1/own/custom_font.css">
+    <link rel="stylesheet" href="./assets1/own/custom_navigation.css">
+    <link rel="stylesheet" href="./assets1/own/custom_categorie.css">
+    <link rel="stylesheet" href="me.css">
+    <link rel="stylesheet" href="style_cat.css">
+</head>
+
+<body>
+    <!-- Top thin promo bar -->
+<div class="topbar">
+  <div class="bloc_container_1 d-flex justify-content-between align-items-center py-2">
+    <!-- Liens gauche -->
+    <div class="lienshaut">
+      <a href="#">Télécharger l'application</a>
+      <a href="#">Vendez sur Oyéo</a>
+      <a href="#">Guide des tailles</a>
+    </div>
+
+    <!-- Bloc central : livraison -->
+    <div id="livraison-bloc" class="livraison-bloc">
+      Livraison gratuite à partir de 50 €</span>
+    </div>
+
+    <!-- Bloc droit : service client, langue, devise -->
+    <div class="d-flex align-items-center gap-3">
+      <div class="service-client">Service client : 06 521 57 58</div>
+
+      <!-- Devise -->
+      <div class="devise-choix d-flex align-items-center">
+        <select id="select-devise" class="form-select form-select-sm">
+          <option value="EUR">EUR (€)</option>
+          <option value="USD">USD ($)</option>
+          <option value="XAF">XAF (FCFA)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ☰ Menu Header with logo, search and actions -->
+  <header class="container mainHeader  ">
+    <div class="mainHeader-inner d-flex justify-content-between align-items-center py-2">
+      <div class="logo " aria-label="logo">
+        <span class="dot" style="font-size: 30px;">Oy</span><span style="color: #e74c3c; font-size: 30px;">éo</span>
+      </div>
+
+      <div class="blocsearch  ">
+        <!-- simple search input -->
+        <!-- <i class="fi-rs-search"></i> -->
+        <input type="search" class="form-control w-100" placeholder="Cherchez vos articles..." id="searchInput" />
+
+      </div>
+
+      <div class="actions" aria-hidden="false">
+        <div class="icon"><span class="icon_file"><img src="./assets/imgs/icons/icon-heart.svg" alt=""></span> Favoris</div>
+        <div class="icon"><span class="icon_file"><img src="./assets/imgs/icons/icon-cart.svg" alt=""></span> Panier</div>
+        <div class="icon"><span class="icon_file"><img src="./assets/imgs/icons/icon-user.svg" alt=""></span> Mon compte</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="w-100 border-bottom border-top " style="position: sticky; top:0; z-index:16; background-color: white;">
+    <div class="maNavigation">
+      <div class="menu-bar">
+        <ul>
+          <li>
+            <a href="">Femmes</a>
+            <div class="sub-menu-1">
+              <ul>
+                <li>
+                  <a href="">Vêtements </a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Tout voir</h6>
+                        <a href="#">Robes</a>
+                        <a href="#">Pantalons</a>
+                        <a href="#">Jupes</a>
+                        <a href="#">Chemisiers</a>
+                        <a href="#">Blazers</a>
+                        <a href="#">T-shirts</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Manteaux</a>
+                        <a href="#">Vestes</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Tailleurs & Ensembles</a>
+                        <a href="#">Pulls & Gilets</a>
+                        <a href="#">Tenues de soirée</a>
+                        <a href="#">Tenues décontractées</a>
+                        <a href="#">Sacs & Accessoires</a>
+                        <a href="#">Sport & Fitness</a>
+                        <a href="#">Mode musulmane</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Zara</a>
+                        <a href="#">H&M</a>
+                        <a href="#">Mango</a>
+                        <a href="#">Shein</a>
+                        <a href="#">PrettyLittleThing</a>
+                        <a href="#">Boohoo</a>
+                        <a href="#">Dior</a>
+                        <a href="#">Chanel</a>
+                        <a href="#">Gucci</a>
+                        <a href="#">Balmain</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item7.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/m1\ \(1\).jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item2.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="">Chaussures</a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Escarpins</a>
+                        <a href="#">Sandales</a>
+                        <a href="#">Bottes</a>
+                        <a href="#">Bottines</a>
+                        <a href="#">Mocassins</a>
+                        <a href="#">Ballerines</a>
+                        <a href="#">Sneakers</a>
+                        <a href="#">Compensées</a>
+                        <a href="#">Tongs</a>
+                        <a href="#">Chaussures à talons</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Tailleurs & Ensembles</a>
+                        <a href="#">Pulls & Gilets</a>
+                        <a href="#">Tenues de soirée</a>
+                        <a href="#">Tenues décontractées</a>
+                        <a href="#">Sacs & Accessoires</a>
+                        <a href="#">Sport & Fitness</a>
+                        <a href="#">Mode musulmane</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Zara</a>
+                        <a href="#">H&M</a>
+                        <a href="#">Mango</a>
+                        <a href="#">Shein</a>
+                        <a href="#">PrettyLittleThing</a>
+                        <a href="#">Boohoo</a>
+                        <a href="#">Dior</a>
+                        <a href="#">Chanel</a>
+                        <a href="#">Gucci</a>
+                        <a href="#">Balmain</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item7.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/m1\ \(1\).jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item2.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Sacs</a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Escarpins</a>
+                        <a href="#">Sandales</a>
+                        <a href="#">Tongs</a>
+                        <a href="#">Chaussures à talons</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Tailleurs & Ensembles</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Zara</a>
+                        <a href="#">H&M</a>
+                        <a href="#">Mango</a>
+                        <a href="#">Shein</a>
+                        <a href="#">PrettyLittleThing</a>
+                        <a href="#">Boohoo</a>
+                        <a href="#">Dior</a>
+                        <a href="#">Chanel</a>
+                        <a href="#">Gucci</a>
+                        <a href="#">Balmain</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/n4.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/about-8.png');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item2.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">lingerie</a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Soutiens-gorge</a>
+                        <a href="#">Culottes</a>
+                        <a href="#">Shortys</a>
+                        <a href="#">Strings</a>
+                        <a href="#">Bodies</a>
+                        <a href="#">Nuisettes</a>
+                        <a href="#">Guêpières</a>
+                        <a href="#">Bustiers</a>
+                        <a href="#">Bas et collants</a>
+                        <a href="#">Lingerie de nuit</a>
+
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Mode musulmane</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Victoria's Secret</a>
+                        <a href="#">Calvin Klein</a>
+                        <a href="#">La Perla</a>
+                        <a href="#">Intimissimi</a>
+                        <a href="#">Etam</a>
+                        <a href="#">Triumph</a>
+                        <a href="#">Hunkemöller</a>
+                        <a href="#">Aubade</a>
+                        <a href="#">Simone Pérèle</a>
+                        <a href="#">Agent Provocateur</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image6.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/m1\ \(1\).jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-item5.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-item3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="">accessoire</a></li>
+                <li><a href="">bijoux et joullerie</a></li>
+                <li><a href="">idées cadeux</a></li>
+                <li><a href="">tout l'univers femme</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="">Hommes</a>
+            <div class="sub-menu-1">
+              <ul>
+                <li>
+                  <a href="">Vêtements </a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Chemises</a>
+                        <a href="#">T-shirts</a>
+                        <a href="#">Pantalons</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Costumes</a>
+                        <a href="#">Blazers</a>
+                        <a href="#">Pulls</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Vestes</a>
+                        <a href="#">Polos</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Chemises</a>
+                        <a href="#">T-shirts</a>
+                        <a href="#">Pantalons</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Costumes & Blazers</a>
+                        <a href="#">Pulls & Gilets</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Manteaux & Vestes</a>
+                        <a href="#">Chaussures & Accessoires</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Zara Man</a>
+                        <a href="#">H&M</a>
+                        <a href="#">Uniqlo</a>
+                        <a href="#">Levi's</a>
+                        <a href="#">Tommy Hilfiger</a>
+                        <a href="#">Ralph Lauren</a>
+                        <a href="#">Nike</a>
+                        <a href="#">Adidas</a>
+                        <a href="#">Polo</a>
+                        <a href="#">Gucci</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/f8.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">nappe</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/f7.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Askitt</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/b2.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="">Chaussures</a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Escarpins</a>
+                        <a href="#">Sandales</a>
+                        <a href="#">Bottes</a>
+                        <a href="#">Bottines</a>
+                        <a href="#">Mocassins</a>
+                        <a href="#">Ballerines</a>
+                        <a href="#">Sneakers</a>
+                        <a href="#">Compensées</a>
+                        <a href="#">Tongs</a>
+                        <a href="#">Chaussures à talons</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Tailleurs & Ensembles</a>
+                        <a href="#">Pulls & Gilets</a>
+                        <a href="#">Tenues de soirée</a>
+                        <a href="#">Tenues décontractées</a>
+                        <a href="#">Sacs & Accessoires</a>
+                        <a href="#">Sport & Fitness</a>
+                        <a href="#">Mode musulmane</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Zara</a>
+                        <a href="#">H&M</a>
+                        <a href="#">Mango</a>
+                        <a href="#">Shein</a>
+                        <a href="#">PrettyLittleThing</a>
+                        <a href="#">Boohoo</a>
+                        <a href="#">Dior</a>
+                        <a href="#">Chanel</a>
+                        <a href="#">Gucci</a>
+                        <a href="#">Balmain</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item7.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/m1\ \(1\).jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item2.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Sacs</a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Escarpins</a>
+                        <a href="#">Sandales</a>
+                        <a href="#">Tongs</a>
+                        <a href="#">Chaussures à talons</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Tailleurs & Ensembles</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Zara</a>
+                        <a href="#">H&M</a>
+                        <a href="#">Mango</a>
+                        <a href="#">Shein</a>
+                        <a href="#">PrettyLittleThing</a>
+                        <a href="#">Boohoo</a>
+                        <a href="#">Dior</a>
+                        <a href="#">Chanel</a>
+                        <a href="#">Gucci</a>
+                        <a href="#">Balmain</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/n4.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/about-8.png');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-large-item2.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">lingerie</a>
+                  <div class="sub-menu-2">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Prêt à porter</h6>
+                        <a href="#">Soutiens-gorge</a>
+                        <a href="#">Culottes</a>
+                        <a href="#">Shortys</a>
+                        <a href="#">Strings</a>
+                        <a href="#">Bodies</a>
+                        <a href="#">Nuisettes</a>
+                        <a href="#">Guêpières</a>
+                        <a href="#">Bustiers</a>
+                        <a href="#">Bas et collants</a>
+                        <a href="#">Lingerie de nuit</a>
+
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Inspections</h6>
+                        <a href="#">Nouveautés</a>
+                        <a href="#">Tops & Chemisiers</a>
+                        <a href="#">Combinaisons</a>
+                        <a href="#">Mode musulmane</a>
+                        <a href="#">Grande taille</a>
+                        <a href="#">Promotions</a>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">Marques a l'honneur</h6>
+                        <a href="#">Victoria's Secret</a>
+                        <a href="#">Calvin Klein</a>
+                        <a href="#">La Perla</a>
+                        <a href="#">Intimissimi</a>
+                        <a href="#">Etam</a>
+                        <a href="#">Triumph</a>
+                        <a href="#">Hunkemöller</a>
+                        <a href="#">Aubade</a>
+                        <a href="#">Simone Pérèle</a>
+                        <a href="#">Agent Provocateur</a>
+
+
+                      </div>
+                      <div class="col-sm-3">
+                        <h6 class="enGras py-2">A la une</h6>
+                        <div class=" row d-flex justify-content-between">
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-image6.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Balmain sur mesure</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm "
+                              style="background-image: url('assets/img/articles/m1\ \(1\).jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Crème anti-soleil</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-item5.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">Jupe veste</a>
+
+                          </div>
+                          <div class="col-5">
+                            <div class="image_navbar shadow-sm"
+                              style="background-image: url('assets/img/articles/card-item3.jpg');">
+
+                            </div>
+
+                            <a href="#" class="enGras mt-2">balerien de taille</a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="">accessoire</a></li>
+                <li><a href="">bijoux et joullerie</a></li>
+                <li><a href="">idées cadeux</a></li>
+                <li><a href="">tout l'univers femme</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li><a href="">Enfants</a></li>
+          <li><a href="">Beauté</a></li>
+          <li><a href="">maison</a></li>
+          <li><a href="">supermarché</a></li>
+          <li><a href="">occassions</a></li>
+          <li><a href="">nouveautés</a></li>
+          <li><a href="">promotions</a></li>
+          <li><a href="">cartes cadeaux</a></li>
+          <li><a href="">services pro</a></li>
+          <li><a href="">Diaspora</a></li>
+          <!-- <li><a href="">Bonne année</a></li> -->
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+    <!-- --------- barre de publicite  data-bs-ride="false"---------- -->
+
+    <div class="bloc_container_1">
+        <div id="myCarousel" class=" carousel slide carousel-fade p-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="mask flex-center">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 col-12 order-md-1 order-2">
+                                    <h4>Femmes</h4>
+                                    <p> Les Galeries Lafayette Paris Haussmann sont à la pointe de la mode féminine et
+                                        proposent à leur clientèle féminine une sélection constamment renouvelée de
+                                        marques françaises et internationales. Sur trois étages dédiés, l'offre réunit
+                                        marques incontournables et créateurs de prêt-à-porter,
+                                        lingerie, chaussures, accessoires et beauté. Découvrez nos articles sur les
+                                        tendances mode féminine..</p>
+                                    <a href="#">BUY NOW</a>
+                                </div>
+                                <div class="col-md-5 col-12 order-md-2 order-1">
+                                    <img src="./assets1/img/articles/n1.jpg" class="mx-auto d-block w-50" alt="slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mask flex-center">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 col-12 order-md-1 order-2">
+                                    <h4>Femmes</h4>
+                                    <p> Les Galeries Lafayette Paris Haussmann sont à la pointe de la mode féminine et
+                                        proposent à leur clientèle féminine une sélection constamment renouvelée de
+                                        marques françaises et internationales. Sur trois étages dédiés, l'offre réunit
+                                        marques incontournables et créateurs de prêt-à-porter,
+                                        lingerie, chaussures, accessoires et beauté. Découvrez nos articles sur les
+                                        tendances mode féminine..</p>
+                                    <a href="#">BUY NOW</a>
+                                </div>
+                                <div class="col-md-5 col-12 order-md-2 order-1">
+                                    <img src="./assets/imgs/articles/n2.jpg" class="mx-auto d-block w-50" alt="slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mask flex-center">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 col-12 order-md-1 order-2">
+                                    <h4>Femmes</h4>
+                                    <p> Les Galeries Lafayette Paris Haussmann sont à la pointe de la mode féminine et
+                                        proposent à leur clientèle féminine une sélection constamment renouvelée de
+                                        marques françaises et internationales. Sur trois étages dédiés, l'offre réunit
+                                        marques incontournables et créateurs de prêt-à-porter,
+                                        lingerie, chaussures, accessoires et beauté. Découvrez nos articles sur les
+                                        tendances mode féminine..</p>
+                                    <a href="#">BUY NOW</a>
+                                </div>
+                                <div class="col-md-5 col-12 order-md-2 order-1">
+                                    <img src="./assets/imgs/articles/n5.jpg" class="mx-auto d-block w-50" alt="slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    </div>
+
+<!-- SECTION DES PRODUITS -->
+    <section class="content">
+
+      <!-- Barre de pastilles (catégories rapides) -->
+      <div class="category-pills" aria-label="Catégories rapides">
+        <button class="pill">Vêtements</button>
+        <button class="pill">Sacs & bagages</button>
+        <button class="pill">Bijoux et joaillerie</button>
+        <button class="pill">Chaussures</button>
+        <button class="pill">Lingerie</button>
+        <button class="pill">Accessoires</button>
+        <button class="pill">Bain</button>
+        <button class="pill">Montres</button>
+        <button class="pill">Lingerie de nuit</button>
+        <button class="pill">Sport</button>
+        <button class="pill">Homewear</button>
+      </div>
+
+      <!-- En-tête contenu: titre + filtres -->
+      <div class="content-header">
+        <h1 class="page-title">Sneakers pour homme</h1>
+        <div class="filters" role="toolbar" aria-label="Filtres">
+          <button class="filter-btn">Trier ▾</button>
+          <button class="filter-btn">Marque ▾</button>
+          <button class="filter-btn">Taille ▾</button>
+          <button class="filter-btn">Couleur ▾</button>
+          <button class="filter-btn">Prix ▾</button>
+          <button class="filter-btn">Tous les filtres</button>
+        </div>
+      </div>
+
+      <div style="color:var(--muted-text); font-size:13px; margin-bottom:8px">11 075 articles</div>
+
+      <!-- Grille produits (copie fidèle de ta page) -->
+      <div class="product-carousel-wrapper">
+        <!-- Flèche gauche -->
+        <button class="scroll-btn left">←</button>
+
+        <!-- Conteneur scrollable des cartes -->
+        <div class="product-grid scroll-container">
+          <!-- Carte produit 1 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Adidas</span>
+              <h3 class="product-title">Floral Summer Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$78</span>
+                  <span class="original-price">$100</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 2 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Nike</span>
+              <h3 class="product-title">Tropical Print Shirt</h3>
+              <div class="rating">★★★★☆ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$65</span>
+                  <span class="original-price">$85</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 3 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Puma</span>
+              <h3 class="product-title">Abstract Pattern Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$72</span>
+                  <span class="original-price">$90</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 4 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Reebok</span>
+              <h3 class="product-title">Stripe Beach Shirt</h3>
+              <div class="rating">★★★☆☆ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$59</span>
+                  <span class="original-price">$75</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 5 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Levi’s</span>
+              <h3 class="product-title">Vintage Floral Shirt</h3>
+              <div class="rating">★★★★☆ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$110</span>
+                  <span class="original-price">$85</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 6 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Uniqlo</span>
+              <h3 class="product-title">Navy Blossom Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$92</span>
+                  <span class="original-price">$120</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 7 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Uniqlo</span>
+              <h3 class="product-title">Striped Floral Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$92</span>
+                  <span class="original-price">$120</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 8 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Uniqlo</span>
+              <h3 class="product-title">Botanical Print Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$92</span>
+                  <span class="original-price">$120</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flèche droite -->
+        <button class="scroll-btn right">→</button>
+      </div>
+
+    </section>
+
+
+
+    <section class="product-section">
+
+      <div class="product-carousel-wrapper">
+        <!-- Flèche gauche -->
+        <button class="scroll-btn left">←</button>
+
+        <!-- Conteneur scrollable des cartes -->
+        <div class="product-grid scroll-container">
+          <!-- Carte produit 1 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n7.jpg" alt="Floral Summer Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Adidas</span>
+              <h3 class="product-title">Floral Summer Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$78</span>
+                  <span class="original-price">$100</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 2 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n8.jpg" alt="Tropical Print Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Nike</span>
+              <h3 class="product-title">Tropical Print Shirt</h3>
+              <div class="rating">★★★★☆ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$65</span>
+                  <span class="original-price">$85</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 3 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n5.jpg" alt="Abstract Pattern Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Puma</span>
+              <h3 class="product-title">Abstract Pattern Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$72</span>
+                  <span class="original-price">$90</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 4 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/n6.jpg" alt="Stripe Beach Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Reebok</span>
+              <h3 class="product-title">Stripe Beach Shirt</h3>
+              <div class="rating">★★★☆☆ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$59</span>
+                  <span class="original-price">$75</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 5 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f5.jpg" alt="Vintage Floral Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Levi’s</span>
+              <h3 class="product-title">Vintage Floral Shirt</h3>
+              <div class="rating">★★★★☆ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$110</span>
+                  <span class="original-price">$85</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 6 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f6.jpg" alt="Navy Blossom Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Uniqlo</span>
+              <h3 class="product-title">Navy Blossom Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$92</span>
+                  <span class="original-price">$120</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 7 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f7.jpg" alt="Striped Floral Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Uniqlo</span>
+              <h3 class="product-title">Striped Floral Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$92</span>
+                  <span class="original-price">$120</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte produit 8 -->
+          <div class="product-card">
+            <span class="badge">Vegetable</span>
+            <svg class="fav-icon" viewBox="0 0 24 24" width="28" height="28">
+              <path
+                d="M12 21s-6.5-4.35-9.5-7.88C-0.5 9.5 1.5 4.5 6 4.5c2 0 4 1 6 3 2-2 4-3 6-3 4.5 0 6.5 5 3.5 8.62C18.5 16.65 12 21 12 21z"
+                stroke="#e86429" fill="transparent" stroke-width="2" />
+            </svg>
+            <div class="img-wrap">
+              <img src="assets/imgs/habit/f8.jpg" alt="Botanical Print Shirt">
+            </div>
+            <div class="card-body">
+              <span class="brand">Uniqlo</span>
+              <h3 class="product-title">Botanical Print Shirt</h3>
+              <div class="rating">★★★★★ (372)</div>
+              <div class="by-text">
+                <span class="by">by</span>
+                <span class="oye">Oyeo</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-group">
+                  <span class="price">$92</span>
+                  <span class="original-price">$120</span>
+                </div>
+                <span class="promo-label">Promo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flèche droite -->
+        <button class="scroll-btn right">→</button>
+      </div>
+    </section>
+
+
+
+    <script>
+        const myCarousel = document.querySelector('#myCarousel');
+        const carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3000, // 3 secondes
+            ride: 'carousel'
+        });
+    </script>
+
+    <!--  <script src="../_assets/___dwn/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <!-- 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    -->
+
+</body>
+
+</html>
