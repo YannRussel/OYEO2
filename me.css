@@ -424,13 +424,13 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  width: 89%;
+  width: 100%;
   margin: auto;
 }
 
 .decouverte .contenu-section {
-  height: 300px;
-  min-width: 450px;
+  height: 250px;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -438,7 +438,7 @@
 }
 
 .decouverte .contenu-section h1 {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 22px;
   width: 60%;
   margin-left: 20px;
@@ -1327,9 +1327,12 @@ span {
 .actions .icon {
   padding: 10px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
 }
 
+.actions .icon .icon_file img{
+  width: 19px;
+}
 /* Ajustement de Livraison et tout */
 
 .livraison-bloc{

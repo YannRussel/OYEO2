@@ -1,4 +1,19 @@
 .content{
-    width: 95%;
+    width: 90%;
     margin: auto;
+}
+
+.category-pills{
+    width: 70%;
+}
+.category-pills .pill{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
 }
