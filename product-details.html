@@ -1,31 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oyeo - home</title>
-    <!-- CDN -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
-
-    <!-- own css -->
-
-    <link rel="stylesheet" href="./assets1/own/custom_color.css">
-    <link rel="stylesheet" href="./assets1/own/custom_font.css">
-    <link rel="stylesheet" href="./assets1/own/custom_navigation.css">
-    <link rel="stylesheet" href="./assets1/own/custom_categorie.css">
-    <link rel="stylesheet" href="me.css">
-    <link rel="stylesheet" href="style_cat.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produit - Section (avec tes images)</title>
+   <link rel="stylesheet" href="assets1/dwn/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style-product-details.css">
+    <link rel="stylesheet" href="assets1/own/custom_color.css">
+  <link rel="stylesheet" href="assets1/own/custom_font.css">
+  <link rel="stylesheet" href="assets1/own/custom_home.css">
+  <link rel="stylesheet" href="me.css">
 </head>
-
 <body>
-    <!-- Top thin promo bar -->
+
+<style>
+  /* Sur la section tout sur l'univers d'homme */
+  /* SECTION DES CATEGORIES DE DEFILEMENT */
+
+.categorie-defile {
+  width: 89%;
+  margin: auto;
+  position: relative;
+}
+
+.titre-categorie-defile {
+  font-size: 1.5em;
+  font-weight: bold;
+  /* text-align: center; */
+  color: #2b3940;
+  margin-right: 1100px;
+}
+
+.defile-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.container-categorie-defile {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  margin-left: 55px;
+}
+
+.container-categorie-defile::-webkit-scrollbar {
+  display: none; /* Cache la barre de défilement */
+}
+
+.container-img-texte {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: #f0f0f0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container-img-texte:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08); */
+}
+
+.img-categorie {
+  width: 70px;
+  height: 70px;
+}
+
+</style>
+
 <div class="topbar">
   <div class="bloc_container_1 d-flex justify-content-between align-items-center py-2">
     <!-- Liens gauche -->
@@ -84,7 +134,7 @@
       <div class="menu-bar">
         <ul>
           <li>
-            <a href="">Femmes</a>
+            <a href="./categorie.html">Femmes</a>
             <div class="sub-menu-1">
               <ul>
                 <li>
@@ -838,155 +888,206 @@
 
   </div>
 
+<div class="psb-wrap" style="margin-top: 50px;">
+  F<div class="psb-grid">
 
-<section class="breadcrumb-option" style="margin-left: 100px; margin-top: 50px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb__text">
-                    <div class="breadcrumb__links styled-breadcrumb">
-                        <a href="index.html">Home</a>
-                        <span class="separator">›</span>
-                        <a href="categorie.html">Homme</a>
-                        <span class="separator">›</span>
-                        <span class="current">Femme</span>
-                    </div>
-                </div>
-            </div>
+    <!-- THUMBNAILS -->
+    <ul class="psb-thumbs" id="psb-thumbs">
+      <!-- Liens fournis par toi -->
+      <li class="psb-thumb psb-thumb--active" data-index="0"><img src="./assets1/single-page/img/product/details/thumb-1.jpg" alt="thumb 1"></li>
+      <li class="psb-thumb" data-index="1"><img src="./assets1/single-page/img/product/details/thumb-2.jpg" alt="thumb 2"></li>
+      <li class="psb-thumb" data-index="2"><img src="./assets1/single-page/img/product/details/thumb-3.jpg" alt="thumb 3"></li>
+      <li class="psb-thumb" data-index="3"><img src="./assets1/single-page/img/product/details/thumb-4.jpg" alt="thumb 4"></li>
+      <li class="psb-thumb" data-index="3"><img src="./assets1/single-page/img/product/details/thumb-4.jpg" alt="thumb 4"></li>
+      <li class="psb-thumb" data-index="3"><img src="./assets1/single-page/img/product/details/thumb-4.jpg" alt="thumb 4"></li>
+      <li class="psb-thumb" data-index="3"><img src="./assets1/single-page/img/product/details/thumb-4.jpg" alt="thumb 4"></li>
+    </ul>
+
+    <!-- MAIN IMAGE -->
+    <div class="psb-main" id="psb-main">
+      <button class="psb-arrow psb-arrow--left" id="psb-prev" title="Précédent" aria-label="Précédent">
+        <!-- chevron left -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M15 18l-6-6 6-6" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <!-- Ordre des images principales tel que tu l'as donné -->
+      <img id="psb-main-img" src="./assets1/single-page/img/product/details/product-1.jpg" alt="Produit principal">
+
+      <button class="psb-arrow psb-arrow--right" id="psb-next" title="Suivant" aria-label="Suivant">
+        <!-- chevron right -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M9 6l6 6-6 6" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- PRODUCT INFO -->
+    <div class="psb-info">
+      <h1 class="psb-title">ESSENTIAL STRUCTURED BLAZER</h1>
+      <div class="psb-brand">Brand: SKMEIMore Men Watches from SKMEI</div>
+
+      <div class="psb-stars" title="4.7/5">
+        <!-- simple 5 stars -->
+        <svg class="psb-star" viewBox="0 0 24 24" fill="#FFD54A" aria-hidden><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+        <span class="psb-muted">(138 reviews)</span>
+      </div>
+
+      <div class="psb-price">
+        <div class="psb-price-new">$ 75.0</div>
+        <div class="psb-price-old">$ 83.0</div>
+      </div>
+<!-- 
+      <p class="psb-desc">
+        Nemo enim ipsam voluptatem quia aspernatur aut odit aut ioreti fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.
+      </p> -->
+
+      <div class="psb-actions">
+        <div class="psb-qty" aria-label="Quantité">
+          <button type="button" id="psb-qty-dec" aria-label="Réduire">−</button>
+          <input id="psb-qty-input" type="text" inputmode="numeric" value="1" aria-live="polite" />
+          <button type="button" id="psb-qty-inc" aria-label="Augmenter">+</button>
         </div>
+
+        <button class="psb-add" id="psb-add-to-cart">🛒 ADD TO CART</button>
+      </div>
+      <!-- --------- DÉBUT : section livraison / accordéons / notes --------- -->
+<div class="psb-extra">
+
+  <!-- Delivery boxes -->
+  <div class="psb-delivery">
+    <div class="psb-delivery-row">
+      <div class="psb-delivery-ico" aria-hidden>
+        <!-- truck icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 7h11v6H3zM16 11h3l2 3v2h-2a2 2 0 1 1-4 0H9" stroke="#222" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="psb-delivery-text">
+        <strong>Livraison et retour gratuits</strong>
+        <div class="psb-muted">Livraison standard gratuite</div>
+      </div>
     </div>
-</section>
 
-    <!-- --------- barre de publicite  data-bs-ride="false"---------- -->
+    <div class="psb-delivery-row">
+      <div class="psb-delivery-ico" aria-hidden>
+        <!-- undo icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 14c-2.8 0-5 2.2-5 5" stroke="#222" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 7v6h-6" stroke="#222" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="psb-delivery-text">
+        <strong>Retour gratuit sous 30 jours</strong>
+        <div class="psb-muted">Satisfait ou remboursé</div>
+      </div>
+    </div>
 
-    <div class="bloc_container_1">
-        <div id="myCarousel" class=" carousel slide carousel-fade p-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
+    <div class="psb-delivery-row">
+      <div class="psb-delivery-ico" aria-hidden>
+        <!-- wallet icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 7h18v10H3z" stroke="#222" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="psb-delivery-text">
+        <strong>Revendre vos articles</strong>
+        <div class="psb-muted">Option de reprise en magasin</div>
+      </div>
+    </div>
+  </div>
 
-                <div class="carousel-item active">
-                    <div class="mask flex-center">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-7 col-12 order-md-1 order-2">
-                                  
-                                    <p> Les Galeries Lafayette Paris Haussmann sont à la pointe de la mode féminine et
-                                        proposent à leur clientèle féminine une sélection constamment renouvelée de
-                                        marques françaises et internationales. Sur trois étages dédiés, l'offre réunit
-                                        marques incontournables et créateurs de prêt-à-porter,
-                                        lingerie, chaussures, accessoires et beauté. Découvrez nos articles sur les
-                                        tendances mode féminine..</p>
-                                    <a href="#">BUY NOW</a>
-                                </div>
-                                <div class="col-md-5 col-12 order-md-2 order-1">
-                                    <img src="./assets1/img/articles/n1.jpg" class="mx-auto d-block w-50" alt="slide">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Accordions -->
+  <div class="psb-accordion">
+    <button class="psb-accordion-item" aria-expanded="false">
+      <span style="color: black;">Matière et entretien</span>
+      <svg class="psb-accordion-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="psb-accordion-panel">
+      <p class="psb-muted">100% coton. Lavage à 30°C. Ne pas repasser sur impression.</p>
+    </div>
 
-                <div class="carousel-item">
-                    <div class="mask flex-center">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-7 col-12 order-md-1 order-2">
-                                    
-                                    <p> Les Galeries Lafayette Paris Haussmann sont à la pointe de la mode féminine et
-                                        proposent à leur clientèle féminine une sélection constamment renouvelée de
-                                        marques françaises et internationales. Sur trois étages dédiés, l'offre réunit
-                                        marques incontournables et créateurs de prêt-à-porter,
-                                        lingerie, chaussures, accessoires et beauté. Découvrez nos articles sur les
-                                        tendances mode féminine..</p>
-                                    <a href="#">BUY NOW</a>
-                                </div>
-                                <div class="col-md-5 col-12 order-md-2 order-1">
-                                    <img src="./assets/imgs/articles/n2.jpg" class="mx-auto d-block w-50" alt="slide">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <button class="psb-accordion-item" aria-expanded="false">
+      <span style="color: black;">Détails du produit</span>
+      <svg class="psb-accordion-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="psb-accordion-panel">
+      <p class="psb-muted">Coupe droite, doublure partielle, poches latérales.</p>
+    </div>
 
-                <div class="carousel-item">
-                    <div class="mask flex-center">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-7 col-12 order-md-1 order-2">
-                                    
-                                    <p> Les Galeries Lafayette Paris Haussmann sont à la pointe de la mode féminine et
-                                        proposent à leur clientèle féminine une sélection constamment renouvelée de
-                                        marques françaises et internationales. Sur trois étages dédiés, l'offre réunit
-                                        marques incontournables et créateurs de prêt-à-porter,
-                                        lingerie, chaussures, accessoires et beauté. Découvrez nos articles sur les
-                                        tendances mode féminine..</p>
-                                    <a href="#">BUY NOW</a>
-                                </div>
-                                <div class="col-md-5 col-12 order-md-2 order-1">
-                                    <img src="./assets/imgs/articles/n5.jpg" class="mx-auto d-block w-50" alt="slide">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <button class="psb-accordion-item" aria-expanded="false">
+      <span style="color: black;">Taille & coupe</span>
+      <svg class="psb-accordion-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="psb-accordion-panel">
+      <p class="psb-muted">Le mannequin mesure 1m86 et porte une taille L.</p>
+    </div>
+  </div>
 
-            </div>
+  <!-- Brand + follow -->
+  <div class="psb-brand-row">
+    <div>Puma</div>
+    <button type="button" class="psb-follow" id="psb-follow-btn" aria-pressed="false">+ Suivre</button>
+  </div>
 
+  <a href="#" class="psb-legal-link">Signaler un problème d'ordre juridique</a>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+  <!-- Reviews -->
+  <div class="psb-reviews">
+    <div class="psb-reviews-header">
+      <div>
+        <div class="psb-reviews-title">Notes</div>
+        <div class="psb-rating">
+          <div class="psb-rating-number">4.3</div>
+          <div class="psb-rating-stars" aria-hidden>
+            <!-- 5 stars (partial filled handled by CSS) -->
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+          </div>
         </div>
+      </div>
+      <div class="psb-muted psb-reviews-count">88 notes</div>
     </div>
 
+    <!-- one review card -->
+    <article class="psb-review-card" aria-label="Avis client">
+      <div class="psb-review-stars" aria-hidden>
+        <!-- 3 filled + 2 outline -->
+        <svg class="filled" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+        <svg class="filled" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+        <svg class="filled" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+        <svg class="outline" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+        <svg class="outline" viewBox="0 0 24 24"><path d="M12 17.3 6.2 20l.8-5.1L3.5 11.6l5.2-.7L12 6l2.3 4.9 5.2.7-3.5 3.3.8 5.1z"/></svg>
+      </div>
+
+      <div class="psb-review-body">
+        <div class="psb-review-title">Joli rouge mais...</div>
+        <div class="psb-review-text">J'ai dû les renvoyer, ils étaient trop volumineux pour moi</div>
+        <div class="psb-review-meta psb-muted">Langue d'origine : anglais · il y a 5 jours</div>
+      </div>
+    </article>
+
+    <div style="margin-top:12px;">
+      <button class="psb-btn-all">Toutes les évaluations</button>
     </div>
 
-<!-- SECTION DES PRODUITS -->
+    <a href="#" class="psb-muted psb-help-link">Comment fonctionnent les notes et les évaluations ?</a>
+  </div>
+
+</div>
+<!-- --------- FIN : section livraison / accordéons / notes --------- -->
+
+
+      <div class="psb-divider"></div>
+      
+    </div>
+    <!-- end product info -->
+
+  </div>
+
+</div>
+<br>
+<br>
+
     <section class="content" style="margin-top: -20px;">
-       <h1 class="page-title" style="font-size: 40px; font-weight: bold;">Mode Femmes</h1>
-             <div style="color:var(--muted-text); font-size:13px; margin-bottom:8px">11 075 articles</div>
-      <!-- Barre de pastilles (catégories rapides) -->
-      <div class="category-pills" aria-label="Catégories rapides">
-        <button class="pill">Vêtements</button>
-        <button class="pill">Sacs & bagages</button>
-        <button class="pill">Bijoux et joaillerie</button>
-        <button class="pill">Chaussures</button>
-        <button class="pill">Lingerie</button>
-        <button class="pill">Accessoires</button>
-        <button class="pill">Bain</button>
-        <button class="pill">Montres</button>
-        <button class="pill">Lingerie de nuit</button>
-        <button class="pill">Sport</button>
-        <button class="pill">Homewear</button>
-      </div>
-
-      <!-- En-tête contenu: titre + filtres -->
-      <div class="content-header">
-
-        <div class="filters" role="toolbar" aria-label="Filtres">
-          <button class="filter-btn">Trier ▾</button>
-          <button class="filter-btn">Marque ▾</button>
-          <button class="filter-btn">Taille ▾</button>
-          <button class="filter-btn">Couleur ▾</button>
-          <button class="filter-btn">Prix ▾</button>
-          <button class="filter-btn">Couleur ▾</button>
-          <button class="filter-btn">Prix ▾</button>
-          <button class="filter-btn">Couleur ▾</button>
-          <button class="filter-btn">Prix ▾</button>
-          <button class="filter-btn">Couleur ▾</button>
-          <button class="filter-btn">Prix ▾</button>
-          <button class="filter-btn">Couleur ▾</button>
-          <button class="filter-btn">Prix ▾</button>
-          <button class="filter-btn">Couleur ▾</button>
-          <button class="filter-btn">Prix ▾</button>
-          <button class="filter-btn">Tous les filtres</button>
-        </div>
-      </div>
+       <h1 class="page-title" style="font-size: 25px; font-weight: bold;">Decouvrez egalement</h1>
       <div class="product-carousel-wrapper" style="margin-top: 10px;">
         <!-- Flèche gauche -->
 
@@ -1283,22 +1384,241 @@
       </div>
 
     </section>
+<br>
 
+    <section class="categorie-defile">
+  <h1 class="titre-categorie-defile">Tout l'univers homme</h1>
+  <br>
 
+  <div class="defile-wrapper">
+    <button class="arrows left">&#10094;</button>
 
-    <script>
-        const myCarousel = document.querySelector('#myCarousel');
-        const carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 3000, // 3 secondes
-            ride: 'carousel'
-        });
-    </script>
+    <div class="container-categorie-defile">
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets1/single-page/img/product/ancrefaccessoires.avif" alt="Canapés" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Canapés</p>
+      </div>
 
-    <!--  <script src="../_assets/___dwn/bootstrap/bootstrap.bundle.min.js"></script> -->
-    <!-- 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    -->
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets1/single-page/img/product/ancrefbijoux.avif" alt="Téléphonie" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Téléphonie</p>
+      </div>
+
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets1/single-page/img/product/ancrefchaussures.avif" alt="Meubles" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Meubles</p>
+      </div>
+
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets1/single-page/img/product/ancrefparfums.avif" alt="Électroménager" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Électroménager</p>
+      </div>
+
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets1/single-page/img/product/ancrefsacs.avif" alt="Décoration" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Décoration</p>
+      </div>
+
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets1/single-page/img/product/ancrefvetements.avif" alt="Jardin" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Jardin</p>
+      </div>
+      <div class="container-img-texte">
+        <div class="image-categorie">
+          <a href=""><img src="./assets/img-categorie/cat (10).webp" alt="Jardin" class="img-categorie"></a>
+        </div>
+        <p class="libele-categorie">Jardin</p>
+      </div>
+
+    </div>
+
+    <button class="arrows right">&#10095;</button>
+  </div>
+</section>
+<br>
+<br>
+<script>
+/* ============================
+   JS - Module for the product
+   ============================ */
+
+(function(){
+  // IMAGE SOURCES: map thumbs -> main images in the order you provided
+  const thumbEls = Array.from(document.querySelectorAll('.psb-thumb'));
+  const mainImg = document.getElementById('psb-main-img');
+  let currentIndex = 0;
+
+  // Define the main images in the desired order (from your list)
+  const mainSources = [
+    "./assets1/single-page/img/product/details/product-1.jpg",
+    "./assets1/single-page/img/product/details/product-3.jpg",
+    "./assets1/single-page/img/product/details/product-2.jpg",
+    "./assets1/single-page/img/product/details/product-4.jpg"
+  ];
+
+  // Ensure thumbs click set corresponding main image (index-based)
+  function setActiveThumb(index){
+    if(index < 0) index = 0;
+    if(index >= thumbEls.length) index = thumbEls.length - 1;
+    thumbEls.forEach(t => t.classList.remove('psb-thumb--active'));
+    const t = thumbEls[index];
+    if(t){
+      t.classList.add('psb-thumb--active');
+      // if thumb image exists use it, else fall back to mainSources
+      const img = t.querySelector('img');
+      if(img && img.src && img.src.trim() !== ''){
+        // if you want the big image to be the same as thumb, use img.src
+        // but we respect the mainSources order specified by the user:
+        mainImg.src = mainSources[index] || img.src;
+      } else {
+        mainImg.src = mainSources[index] || '';
+      }
+      mainImg.alt = img ? (img.alt || 'Produit') : 'Produit';
+      currentIndex = index;
+    }
+  }
+
+  thumbEls.forEach((t, i) => {
+    t.addEventListener('click', () => setActiveThumb(i));
+    t.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActiveThumb(i); }
+    });
+  });
+
+  document.getElementById('psb-prev').addEventListener('click', () => {
+    const idx = (currentIndex - 1 + thumbEls.length) % thumbEls.length;
+    setActiveThumb(idx);
+  });
+  document.getElementById('psb-next').addEventListener('click', () => {
+    const idx = (currentIndex + 1) % thumbEls.length;
+    setActiveThumb(idx);
+  });
+
+  // QUANTITY CONTROLS
+  const qtyInput = document.getElementById('psb-qty-input');
+  const btnDec = document.getElementById('psb-qty-dec');
+  const btnInc = document.getElementById('psb-qty-inc');
+
+  function sanitizeQty(val){
+    let n = parseInt(String(val).replace(/\D/g,''), 10);
+    if (!Number.isFinite(n) || isNaN(n)) n = 1;
+    if(n < 1) n = 1;
+    return n;
+  }
+  btnDec.addEventListener('click', () => {
+    const current = sanitizeQty(qtyInput.value);
+    const next = Math.max(1, current - 1);
+    qtyInput.value = next;
+  });
+  btnInc.addEventListener('click', () => {
+    const current = sanitizeQty(qtyInput.value);
+    qtyInput.value = current + 1;
+  });
+  qtyInput.addEventListener('input', () => {
+    qtyInput.value = sanitizeQty(qtyInput.value);
+  });
+
+  // COLOR SELECT
+  const swatches = Array.from(document.querySelectorAll('.psb-swatch'));
+  swatches.forEach(s => {
+    s.addEventListener('click', () => {
+      swatches.forEach(x => x.classList.remove('psb-swatch--selected'));
+      s.classList.add('psb-swatch--selected');
+    });
+    s.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); s.click(); }
+    });
+  });
+
+  // SIZE SELECT
+  const sizes = Array.from(document.querySelectorAll('.psb-size'));
+  sizes.forEach(sz => {
+    sz.addEventListener('click', () => {
+      sizes.forEach(x => x.classList.remove('psb-size--selected'));
+      sz.classList.add('psb-size--selected');
+    });
+  });
+
+  // ADD TO CART (simple demo)
+  document.getElementById('psb-add-to-cart').addEventListener('click', () => {
+    const qty = sanitizeQty(qtyInput.value);
+    const colorEl = document.querySelector('.psb-swatch--selected');
+    const sizeEl = document.querySelector('.psb-size--selected');
+    const color = colorEl ? colorEl.getAttribute('data-color') : null;
+    const size = sizeEl ? sizeEl.textContent.trim() : null;
+    alert(`Ajouté au panier:\nQuantité: ${qty}\nCouleur: ${color || '—'}\nTaille: ${size || '—'}`);
+  });
+
+  // WISHLIST toggle (visual)
+  const wishBtn = document.getElementById('psb-wishlist');
+  wishBtn.addEventListener('click', () => {
+    const pressed = wishBtn.getAttribute('aria-pressed') === 'true';
+    wishBtn.setAttribute('aria-pressed', String(!pressed));
+    wishBtn.style.background = !pressed ? '#fff0f0' : '#fff';
+  });
+
+  // keyboard arrows for gallery
+  window.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowLeft'){ document.getElementById('psb-prev').click(); }
+    if(e.key === 'ArrowRight'){ document.getElementById('psb-next').click(); }
+  });
+
+  // init
+  setActiveThumb(0);
+
+})();
+</script>
+
+<!-- LA PARTIE DE LA LIVRAISON ET TOUT -->
+
+<script>
+  // Accordions
+  document.querySelectorAll('.psb-accordion-item').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      const panel = btn.nextElementSibling;
+      if(!expanded){
+        panel.style.display = 'block';
+      } else {
+        panel.style.display = 'none';
+      }
+    });
+  });
+
+  // Follow button toggle
+  const followBtn = document.getElementById('psb-follow-btn');
+  if (followBtn){
+    followBtn.addEventListener('click', ()=>{
+      const pressed = followBtn.getAttribute('aria-pressed') === 'true';
+      followBtn.setAttribute('aria-pressed', String(!pressed));
+      followBtn.textContent = pressed ? '+ Suivre' : '✓ Suivi';
+    });
+  }
+
+  // (Optionnel) small accessibility: allow Enter/Space on accordion buttons
+  document.querySelectorAll('.psb-accordion-item').forEach(btn=>{
+    btn.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        btn.click();
+      }
+    });
+  });
+</script>
+
 
 </body>
-
 </html>

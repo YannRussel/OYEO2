@@ -17,3 +17,32 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+/* SECTION ARBORESCENCE */
+
+.styled-breadcrumb a {
+    font-size: 15px;
+    color: #0ea5a4; /* couleur principale des liens */
+    text-decoration: none;
+    margin-right: 6px;
+    transition: color 0.3s;
+}
+.styled-breadcrumb a:hover {
+    color: #06b6d4;
+}
+.styled-breadcrumb .separator {
+    color: #94a3b8; /* couleur grise pour les séparateurs */
+    margin: 0 6px;
+}
+.styled-breadcrumb .current {
+    font-size: 15px;
+    color: black; /* couleur du texte actuel */
+    font-weight: 600;
+}
+
+
+
+/* SECTION BANNER */
+
